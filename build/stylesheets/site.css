@@ -1,0 +1,117 @@
+h2 {
+  margin-top: 30px; }
+
+h3 {
+  margin-top: 20px; }
+
+a {
+  color: #00AAE7; }
+  a:hover {
+    color: #005B94; }
+
+section, .venue-photo, .logo-container {
+  margin-top: 20px; }
+
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Merriweather", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400; }
+
+.event-info h1 {
+  font-size: 2.0rem;
+  text-align: center; }
+.event-info h3, .event-info h4 {
+  font-wight: 400; }
+
+.bg-primary {
+  background-color: #005B94 !important; }
+  .bg-primary a {
+    color: white; }
+    .bg-primary a:hover {
+      color: #00AAE7; }
+
+.btn-primary {
+  background-color: #005B94;
+  border: 1px solid #005B94; }
+
+.btn-primary-outline {
+  border: 1px solid #005B94;
+  color: #005B94; }
+
+img {
+  width: 100%; }
+
+h1 {
+  color: #005B94; }
+
+h2 {
+  color: #84C661; }
+
+h3 {
+  color: #00AAE7;
+  font-size: 1.5rem; }
+
+.site-footer {
+  border-top: 2px dashed #005B94;
+  margin-top: 20px;
+  padding: 15px 0; }
+
+address p {
+  margin: 0; }
+
+.home > section {
+  margin-top: 20px;
+  border-top: 1px dashed #00AAE7;
+  padding-top: 15px; }
+  .home > section h1 {
+    text-align: center; }
+  .home > section.mailing-list-signup {
+    margin-top: 15px;
+    border-top: none; }
+    .home > section.mailing-list-signup h2 {
+      text-align: center;
+      font-size: 1.5rem; }
+
+.speaker {
+  text-align: center; }
+  .speaker .name {
+    font-size: 18px;
+    color: #AAA; }
+
+.speaker-photo {
+  border-radius: 50%;
+  max-width: 200px;
+  max-height: 200px;
+  text-align: center; }
+
+.site-notice {
+  text-align: center;
+  color: #AAA; }
+
+#venue .name {
+  font-size: 1rem;
+  margin: 0; }
+#venue .embedded-map {
+  text-align: center; }
+
+#sponsors .prospectus-text {
+  text-align: center;
+  font-size: 1.25rem; }
+#sponsors section {
+  border-bottom: 1px solid #AAA; }
+  #sponsors section:last-child {
+    border-bottom: none; }
+  #sponsors section h1 {
+    font-size: 1.5rem;
+    color: #84C661; }
+#sponsors .sponsor {
+  text-align: center; }
+  #sponsors .sponsor .logo {
+    max-height: 250px;
+    max-width: 250px; }
+
+#lodging .distance {
+  color: #84C661; }

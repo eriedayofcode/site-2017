@@ -1,0 +1,34 @@
+- name: Sheraton Erie Bayfront Hotel
+  address: 55 W Bay Rd.
+  city_state: Erie, PA
+  zipcode: 16507
+  reason: The hotel of choice for the conference.  It sits on the beautiful Erie Bayfront at the end of Dobbins Landing, and gives you an awesome view of the bay or of the Erie skyline.  It is also connected to an outdoor tiki bar!
+  phone: (814) 454-2005
+  url: http://sheratoneriebayfront.com
+  distance: 0.5 miles (10 minute walk)
+  directions: "https://www.google.com/maps/dir/Sheraton+Erie+Bayfront+Hotel,+West+Bay+Road,+Erie,+PA/Erie+Art+Museum,+411+State+St,+Erie,+PA+16501/@42.1340279,-80.0931129,16z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x882d7ff3e0f6d39f:0x650bd30d815ede2a!2m2!1d-80.0922541!2d42.1367266!1m5!1m1!1s0x882d7fe545495e93:0x24059a439df897ed!2m2!1d-80.085217!2d42.130872"
+  type: hotel
+  proximity: close
+
+- name: Avalon Hotel & Conference Center
+  address: 16 W 10th St.
+  city_state: Erie, PA
+  zipcode: 16501
+  phone: (814) 459-2220
+  url: http://avalonerie.com
+  distance: 0.4 miles (10 minute walk)
+  directions: "https://www.google.com/maps/dir/Avalon+Erie+Hotel+%26+Conference+Center,+West+10th+Street,+Erie,+PA/Erie+Art+Museum,+411+State+St,+Erie,+PA+16501/@42.1279673,-80.0871348,17z/data=!4m13!4m12!1m5!1m1!1s0x882d7fe3949d0a91:0x14bdb0c036edd5f2!2m2!1d-80.082992!2d42.125627!1m5!1m1!1s0x882d7fe545495e93:0x24059a439df897ed!2m2!1d-80.085217!2d42.130872"
+  type: hotel
+  proximity: close
+
+- name: Courtyard (Marriott) Erie Ambassador Conference Center / Hotel
+  address: 7792 Peach St.
+  city_state: Erie, PA
+  zipcode: 16509
+  phone: (814) 860-8300
+  url: http://www.marriott.com/hotels/travel/ericy-courtyard-erie-ambassador-conference-center/
+  distance: 11 miles (14 minute drive)
+  reason: Affordable suites, across the street from <a href="http://splashlagoon.com">Splash Lagoon</a>, down the road from the <a href="http://www.millcreekmall.net/">Millcreek Mall</a> and other shopping centers, and directly off of I-90.  Venue is a straight shot down Peach St., then right onto 5th.
+  directions: "https://www.google.com/maps/dir/Courtyard+Erie+Ambassador+Conference+Center,+Peach+Street,+Erie,+PA/Erie+Art+Museum,+411+State+St,+Erie,+PA+16501/@42.084198,-80.1510051,12z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x883280b109f1c557:0x3963a6e21969e1e!2m2!1d-80.0843735!2d42.0502504!1m5!1m1!1s0x882d7fe545495e93:0x24059a439df897ed!2m2!1d-80.085217!2d42.130872"
+  type: hotel
+  proximity: far

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="author" content="Erie Day of Code 2016">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>Erie Day of Code 2016</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <%= stylesheet_link_tag :site %>
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+
+    <!--<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'> -->
+  </head>
+
+  <body class="<%= page_classes %>">
+    <nav class="navbar navbar-static-top bg-primary">
+      <!--<a href="#" class="navbar-brand"></a>-->
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#speakers">Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#venue">Venue</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#lodging">Lodging</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sponsors">Sponsors</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav pull-xs-right">
+          <li class="nav-item">
+            <a class="nav-link" href="<%= social_links.twitter %>" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<%= social_links.facebook %>" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="logo-container">
+            <% link_to '/' do %>
+              <%= image_tag 'logo.png', class: 'logo', alt: 'Erie Day of Code 2016', title: 'Erie Day of Code 2016' %>
+            <% end %>
+          </div>
+
+          <section class="event-info">
+            <h1 class="date">
+              June 17, 2016 @ the
+              <span class="venue">
+                <%= link_to venue.name, venue.url %>
+              </span>
+            </h1>
+          </section>
+        </div>
+      </div>
+
+      <%= yield %>
+
+    </div>
+
+    <%= javascript_include_tag :all %>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <p>
+              If you have questions or need more information,
+              send an email to
+              <%= mail_to 'contact@eriedayofcode.com' %>
+            </p>
+
+            <p>
+              Please review our
+              <%= link_to 'Code of Conduct', '/code-of-conduct.html' %>
+            </p>
+
+            <p>
+              Erie Day of Code is organized by members of the
+              <%= link_to 'Coderie Software Development Group', 'http://meetup.com/coderie' %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

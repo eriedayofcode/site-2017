@@ -214,7 +214,7 @@ title: Erie Day of Code 2016 | June 17 @ <%= venue.name %>
         <% data.sponsors.partners.each do |s| %>
           <div class="col-lg-6">
             <article class="sponsor">
-              <% link_to s.url do %>
+              <% link_to s.url, target: '_blank' do %>
                 <%= image_tag "sponsors/#{s.logo}", alt: s.name, title: s.name, class: 'logo' %>
               <% end %>
             </article>

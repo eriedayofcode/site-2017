@@ -148,7 +148,7 @@ title: Erie Day of Code 2016 | June 17 @ <%= venue.name %>
                   <%= place.address %>
                   (<%= link_to "Directions", place.directions, target: '_blank' %>)
                 </p>
-                <p><%= "#{place.city_state}, #{place.zipcode}" %></p>
+                <p><%= "#{place.city_state} #{place.zipcode}" %></p>
                 <p>
                   <a href="tel:+1<%= place.phone.gsub(/[^\d]/, "") %>">
                     <%= place.phone %>
@@ -172,7 +172,7 @@ title: Erie Day of Code 2016 | June 17 @ <%= venue.name %>
                   <%= place.address %>
                   (<%= link_to "Directions", place.directions, target: '_blank' %>)
                 </p>
-                <p><%= "#{place.city_state}, #{place.zipcode}" %></p>
+                <p><%= "#{place.city_state} #{place.zipcode}" %></p>
                 <p>
                   <a href="tel:+1<%= place.phone.gsub(/[^\d]/, "") %>">
                     <%= place.phone %>

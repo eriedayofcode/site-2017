@@ -97,10 +97,7 @@ address {
     text-align: center;
   }
 
-  &.mailing-list-signup {
-    margin-top: 15px;
-    border-top: none;
-
+  &#mailing-list-signup {
     h2 {
       text-align: center;
       font-size: 1.5rem;
@@ -177,4 +174,8 @@ address {
   .distance {
     color: $secondary-color;
   }
+}
+
+.event-description {
+  margin-top: 15px;
 }

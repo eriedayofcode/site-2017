@@ -68,12 +68,9 @@ address p {
   padding-top: 15px; }
   .home > section h1 {
     text-align: center; }
-  .home > section.mailing-list-signup {
-    margin-top: 15px;
-    border-top: none; }
-    .home > section.mailing-list-signup h2 {
-      text-align: center;
-      font-size: 1.5rem; }
+  .home > section#mailing-list-signup h2 {
+    text-align: center;
+    font-size: 1.5rem; }
 
 .speaker {
   text-align: center; }
@@ -116,3 +113,6 @@ address p {
 
 #lodging .distance {
   color: #84C661; }
+
+.event-description {
+  margin-top: 15px; }

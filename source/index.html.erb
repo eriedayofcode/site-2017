@@ -28,8 +28,8 @@ title: Erie Day of Code 2016 | June 17 @ <%= venue.name %>
   <section id="mailing-list-signup">
     <h1>Stay up to Date</h1>
     <h2>Subscribe to our mailing list for updates and ticket sales</h2>
-      <div class="row">
-        <div class="col-lg-12">
+    <div class="row">
+      <div class="col-lg-12">
         <form action="<%= mailing_list_url %>"
               id="mailing-list-subscribe-form"
               class="form"
@@ -60,8 +60,8 @@ title: Erie Day of Code 2016 | June 17 @ <%= venue.name %>
                    type="text" />
           </div>
         </form>
-        </div>
       </div>
+    </div>
   </section>
 
   <section id="speakers">
@@ -165,7 +165,7 @@ title: Erie Day of Code 2016 | June 17 @ <%= venue.name %>
     <p>
       The Erie Art Museum is one of the best places in Erie to hold events.
       The historic downtown gallery building blows out to include an enormous
-      modern architectural wing with an event space and café. The building spans
+      modern architectural wing with an event space and café. The building Spans
       most of the block between 4th and State St., and 5th and French St.
       The conference entrance will be through the large glass doors of the
       Wave Café on 5th street. Once inside, the large gallery hall with the main
@@ -275,7 +275,22 @@ title: Erie Day of Code 2016 | June 17 @ <%= venue.name %>
             </article>
           </div>
         <% end %>
-        </div>
+      </div>
+    </section>
+    <section id="sponsor-platinum">
+      <h1 class="platinum">Platinum</h1>
+
+      <div class="row">
+        <% data.sponsors.platinum.each do |s| %>
+          <div class="col-lg-6">
+            <article class="sponsor">
+              <% link_to s.url, target: '_blank' do %>
+                <%= image_tag "sponsors/#{s.logo}", alt: s.name, title: s.name, class: 'logo' %>
+              <% end %>
+              <p class="blurb"><%= s.blurb %></p>
+            </article>
+          </div>
+        <% end %>
       </div>
     </section>
   </section>

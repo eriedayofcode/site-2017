@@ -5,3 +5,13 @@ partners:
   - name: Tungsten Creative
     url: http://atomic74.com
     logo: 'tungsten-logo.png'
+platinum:
+  - name: Think Through Math
+    url: http://thinkthroughmath.com
+    logo: 'ttm-logo.png'
+    blurb:
+  - name: Distributed Network Software, LLC
+    url: http://dnsllc.com
+    logo: 'dns-logo.png'
+    blurb: Distributed Network Software, LLC - Developing Software, Delivering Service!
+

@@ -113,6 +113,9 @@ address p {
   #sponsors .sponsor .logo {
     max-height: 250px;
     max-width: 250px; }
+#sponsors #sponsor-platinum .sponsor .logo {
+  max-height: 350px;
+  max-width: 350px; }
 
 #lodging .distance {
   color: #84C661; }

@@ -98,12 +98,16 @@ address {
     text-align: center;
   }
 
-  &#mailing-list-signup {
+  &#mailing-list-signup, &#ticket-purchase {
     h2 {
       text-align: center;
       font-size: 1.5rem;
     }
   }
+}
+
+#ticket-purchase .instructions {
+  text-align: center;
 }
 
 .speaker {
@@ -168,6 +172,7 @@ address {
 
   .sponsor {
     text-align: center;
+    margin-bottom: 30px;
     .logo {
       max-height: 250px;
       max-width: 250px;
@@ -188,4 +193,9 @@ address {
 
 .event-description {
   margin-top: 15px;
+}
+
+.purchase-button-wrap {
+  margin-top: 20px;
+  text-align: center;
 }

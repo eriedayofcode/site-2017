@@ -14,4 +14,18 @@ platinum:
     url: http://dnsllc.com
     logo: 'dns-logo.png'
     blurb: Distributed Network Software, LLC - Developing Software, Delivering Service!
+silver:
+  - name: Wërkbot
+    url: http://werkbot.com
+    logo: 'werkbot.png'
+  - name: ECGRA
+    url: http://ecgra.org
+    logo: 'ecgra.jpg'
+  - name: Ben Franklin Technology Partners
+    url: http://benfranklin.org
+    logo: 'bftp.jpg'
+  - name: Larson Texts
+    url: http://larsontexts.com
+    logo: 'larson.png'
+
 

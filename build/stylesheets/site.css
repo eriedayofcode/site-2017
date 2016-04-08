@@ -69,9 +69,12 @@ address p {
   padding-top: 15px; }
   .home > section h1 {
     text-align: center; }
-  .home > section#mailing-list-signup h2 {
+  .home > section#mailing-list-signup h2, .home > section#ticket-purchase h2 {
     text-align: center;
     font-size: 1.5rem; }
+
+#ticket-purchase .instructions {
+  text-align: center; }
 
 .speaker {
   text-align: center; }
@@ -109,7 +112,8 @@ address p {
     font-size: 1.5rem;
     color: #84C661; }
 #sponsors .sponsor {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 30px; }
   #sponsors .sponsor .logo {
     max-height: 250px;
     max-width: 250px; }
@@ -122,3 +126,7 @@ address p {
 
 .event-description {
   margin-top: 15px; }
+
+.purchase-button-wrap {
+  margin-top: 20px;
+  text-align: center; }

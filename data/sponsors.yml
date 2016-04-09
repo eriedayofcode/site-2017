@@ -14,6 +14,10 @@ platinum:
     url: http://dnsllc.com
     logo: 'dns-logo.png'
     blurb: Distributed Network Software, LLC - Developing Software, Delivering Service!
+gold:
+  - name: Vehikl
+    url: http://vehikl.com
+    logo: 'vehikl.png'
 silver:
   - name: Wërkbot
     url: http://werkbot.com
@@ -27,5 +31,3 @@ silver:
   - name: Larson Texts
     url: http://larsontexts.com
     logo: 'larson.png'
-
-

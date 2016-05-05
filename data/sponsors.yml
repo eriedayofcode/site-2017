@@ -18,6 +18,9 @@ gold:
   - name: Vehikl
     url: http://vehikl.com
     logo: 'vehikl.png'
+  - name: Erie Insurance
+    url: http://erieinsurance.com
+    logo: 'ei-logo.png'
 silver:
   - name: Wërkbot
     url: http://werkbot.com

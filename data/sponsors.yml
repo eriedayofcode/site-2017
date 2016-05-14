@@ -34,3 +34,6 @@ silver:
   - name: Larson Texts
     url: http://larsontexts.com
     logo: 'larson.png'
+community:
+  - name: Integer 32, LLC.  A Rust Consultancy.
+    url: https://twitter.com/integer32llc

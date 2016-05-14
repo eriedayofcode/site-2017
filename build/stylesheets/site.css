@@ -120,6 +120,8 @@ address p {
 #sponsors #sponsor-platinum .sponsor .logo {
   max-height: 350px;
   max-width: 350px; }
+#sponsors #sponsor-community .community-support {
+  font-size: 1.5rem; }
 
 #lodging .distance {
   color: #84C661; }

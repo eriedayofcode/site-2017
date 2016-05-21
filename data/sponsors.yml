@@ -21,6 +21,9 @@ gold:
   - name: Erie Insurance
     url: http://erieinsurance.com
     logo: 'ei-logo.png'
+  - name: Velocity Network
+    url: http://velocitynetwork.com
+    logo: 'vnet-logo.png'
 silver:
   - name: Wërkbot
     url: http://werkbot.com

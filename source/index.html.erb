@@ -90,6 +90,31 @@ title: Erie Day of Code 2016 | June 17 @ <%= venue.name %>
     </div>
   </section>
 
+  <section id="schedule">
+    <h1>Schedule</h1>
+    <% data.schedule.each do |i| %>
+      <article class="schedule-row <%= i.type %>">
+        <div class="row">
+          <div class="col-lg-2 time-col">
+            <p class="time"><%= i.time %></p>
+          </div>
+          <div class="col-lg-7 info-col">
+            <h2 class="title"><%= i.title %></h2>
+            <% if i.description %>
+              <div class="description"><%= md_text i.description %></div>
+            <% end %>
+          </div>
+          <div class="col-lg-3 speaker-col">
+            <% if i.type == 'talk' %>
+              <%= image_tag i.speaker.image, alt: i.speaker.name, title: i.speaker.name, class: 'speaker-photo' %>
+              <h3 class="speaker-name"><%= i.speaker.name %></h3>
+            <% end %>
+          </div>
+        </div>
+      </article>
+    <% end %>
+  </section>
+
   <section id="speakers">
     <h1>Speakers</h1>
 
@@ -104,7 +129,11 @@ title: Erie Day of Code 2016 | June 17 @ <%= venue.name %>
             Sweating the Details
           </h4>
           <p class="info">
-            Host of <%= link_to "Full Stack Radio", "https://twitter.com/fullstackradio" %>.
+            Host of
+            <%= link_to "Full Stack Radio", "https://twitter.com/fullstackradio" %>
+            and author of
+            <%= link_to "Refactoring to Collections", "http://adamwathan.me/refactoring-to-collections/" %>.
+
             <br>
             Senior Developer at <%= link_to "Tighten Co.", "http://tighten.co" %>.
           </p>
@@ -125,7 +154,7 @@ title: Erie Day of Code 2016 | June 17 @ <%= venue.name %>
           <div class="row">
             <div class="col-lg-6">
               <p class="info">
-                Laravel old guard, Golang and Space enthusiast.
+                Laravel old-guard, Golang and space enthusiast.
               </p>
             </div>
             <div class="col-lg-6">
@@ -217,7 +246,7 @@ title: Erie Day of Code 2016 | June 17 @ <%= venue.name %>
     </div>
 
     <div class="row">
-      <div class="col-lg-6 col-lg-offset-3">
+      <div class="col-lg-6">
         <article class="speaker">
           <%= image_tag 'speakers/jesi-major.png', class: 'speaker-photo', alt: "Jessica Major" %>
           <h3 class="name">
@@ -231,6 +260,23 @@ title: Erie Day of Code 2016 | June 17 @ <%= venue.name %>
             at <%= link_to "Deviant Art", "http://deviantart.com/" %>.
             <br>
             Lover of animals. Hero of Servers. Slayer of bugs.
+          </p>
+        </article>
+      </div>
+      <div class="col-lg-6">
+        <article class="speaker">
+          <%= image_tag 'speakers/bill-laboon.png', class: 'speaker-photo', alt: "Bill Laboon" %>
+          <h3 class="name">
+            <%= link_to "Bill Laboon", "https://twitter.com/billlaboon" %>
+          </h3>
+          <h4 class="talk-title">
+            Thinking Functionally
+          </h4>
+          <p class="info">
+            Visiting Lecturer at the University of Pittsburgh
+            <br>
+            Author of
+            <%= link_to "A Friendly Introduction to Software Testing", "https://www.amazon.com/Friendly-Introduction-Software-Testing-ebook/dp/B01BCPXLHU" %>.
           </p>
         </article>
       </div>

@@ -1,5 +1,6 @@
 require 'ostruct'
 require 'pry'
+require 'kramdown'
 
 ###
 # Page options, layouts, aliases and proxies
@@ -69,6 +70,10 @@ helpers do
 
   def further_lodging
     data.lodging.select { |place| place.proximity == 'far' }
+  end
+
+  def md_text(text)
+    Kramdown::Document.new(text).to_html
   end
 end
 

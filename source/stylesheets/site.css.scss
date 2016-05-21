@@ -205,3 +205,42 @@ address {
   margin-top: 20px;
   text-align: center;
 }
+
+#schedule {
+  .time {
+    color: $primary-color;
+    font-weight: bold;
+  }
+
+  .title {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+
+  .speaker-name {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #373a3c;
+  }
+
+  .schedule-row {
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &.talk .title{
+      color: $tertiary-color;
+    }
+
+    &.other .title {
+
+    }
+    margin-top: 10px;
+    border-bottom: 1px dotted #ccc;
+  }
+
+  .speaker-col {
+    text-align: center;
+  }
+}

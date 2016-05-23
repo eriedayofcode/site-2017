@@ -26,7 +26,8 @@
 - time: 9:45am - 10:15am
   type: talk
   title: Building a Startup in Erie
-  description:
+  description: |-
+    As a developer, you have probably thought, _"I wonder what it would be like to start my own startup..."_, and then you romanticize the idea in every way (#famous #cashmoney #imtheboss). Mat Silva has actually launched a startup and will talk through the realities of launching & running a funded startup. You will hear his startup’s story, get first hand insight from his success & failures and ultimately get a better understanding of what it takes to actually launch a technology startup.
   speaker:
     name: Mat Silva
     image: speakers/mat-silva.jpg

@@ -206,7 +206,7 @@ address {
   text-align: center;
 }
 
-#schedule {
+#agenda {
   .time {
     color: $primary-color;
     font-weight: bold;
@@ -224,7 +224,7 @@ address {
     color: #373a3c;
   }
 
-  .schedule-row {
+  .agenda-row {
     &:last-child {
       border-bottom: none;
     }

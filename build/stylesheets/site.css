@@ -133,23 +133,23 @@ address p {
   margin-top: 20px;
   text-align: center; }
 
-#schedule .time {
+#agenda .time {
   color: #005B94;
   font-weight: bold; }
-#schedule .title {
+#agenda .title {
   margin-top: 0;
   font-size: 1.2rem; }
-#schedule .speaker-name {
+#agenda .speaker-name {
   margin-top: 10px;
   font-size: 1.1rem;
   text-align: center;
   color: #373a3c; }
-#schedule .schedule-row {
+#agenda .agenda-row {
   margin-top: 10px;
   border-bottom: 1px dotted #ccc; }
-  #schedule .schedule-row:last-child {
+  #agenda .agenda-row:last-child {
     border-bottom: none; }
-  #schedule .schedule-row.talk .title {
+  #agenda .agenda-row.talk .title {
     color: #00AAE7; }
-#schedule .speaker-col {
+#agenda .speaker-col {
   text-align: center; }

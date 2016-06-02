@@ -24,6 +24,9 @@ gold:
   - name: Velocity Network
     url: http://velocitynetwork.com
     logo: 'vnet-logo.png'
+  - name: Laravel Forge
+    url: http://forge.laravel.com
+    logo: 'laravel-logo.png'
 silver:
   - name: Wërkbot
     url: http://werkbot.com

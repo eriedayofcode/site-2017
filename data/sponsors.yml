@@ -46,6 +46,7 @@ silver:
 community:
   - name: Integer 32, LLC.  A Rust Consultancy.
     url: https://twitter.com/integer32llc
+    logo: 'integer32-logo.png'
 promotional:
   - name: Komodo IDE by ActiveState
     url: http://komodoide.com

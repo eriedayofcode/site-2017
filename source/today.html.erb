@@ -1,0 +1,26 @@
+<div class="today">
+  <section id="agenda">
+    <h1>Agenda</h1>
+    <% data.schedule.each do |i| %>
+      <article class="agenda-row <%= i.type %>">
+        <div class="row">
+          <div class="col-xs-3 time-col">
+            <p class="time"><%= i.time %></p>
+          </div>
+          <div class="col-xs-9 info-col">
+            <h2 class="title"><%= i.title %></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-xs-offset-3 speaker-col">
+            <% if i.type == 'talk' %>
+              <%= image_tag i.speaker.image, alt: i.speaker.name, title: i.speaker.name, class: 'speaker-photo' %>
+              <h3 class="speaker-name"><%= i.speaker.name %></h3>
+            <% end %>
+          </div>
+        </div>
+      </article>
+    <% end %>
+  </section>
+
+</div>

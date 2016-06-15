@@ -153,3 +153,6 @@ address p {
     color: #00AAE7; }
 #agenda .speaker-col {
   text-align: center; }
+
+.today .agenda-row .time-col {
+  font-size: 0.75rem; }

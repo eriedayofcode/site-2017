@@ -28,6 +28,7 @@ configure :development do
   activate :livereload
 end
 
+page 'today.html'
 page 'sponsorship.html'
 page 'code-of-conduct.html'
 

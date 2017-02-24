@@ -161,6 +161,12 @@ h3 {
   margin-top: 20px;
   padding: 15px 0;
   text-align: center;
+  background-color: $primary-color;
+  color: white;
+
+  a {
+    color: $secondary-color;
+  }
 }
 
 address {

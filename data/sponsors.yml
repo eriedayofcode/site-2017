@@ -2,52 +2,17 @@ partners:
   - name: Radius CoWork
     url: http://radiusco.work
     logo: 'radius-logo.png'
-  - name: Tungsten Creative
-    url: http://atomic74.com
-    logo: 'tungsten-logo.png'
-platinum:
-  - name: Think Through Math
-    url: http://thinkthroughmath.com
-    logo: 'ttm-logo.png'
-    blurb: Adaptive instruction, engaging student motivation, online teachers for 1:1 instant intervention, proven math score improvements. Grades 3+.
-  - name: Distributed Network Software, LLC
-    url: http://dnsllc.com
-    logo: 'dns-logo.png'
-    blurb: Distributed Network Software, LLC - Developing Software, Delivering Service!
 gold:
   - name: Vehikl
     url: http://vehikl.com
     logo: 'vehikl.png'
-  - name: Erie Insurance
-    url: http://erieinsurance.com
-    logo: 'ei-logo.png'
-  - name: Velocity Network
-    url: http://velocitynetwork.com
-    logo: 'vnet-logo.png'
-  - name: Laravel Forge
-    url: http://forge.laravel.com
-    logo: 'laravel-logo.png'
 silver:
   - name: Wërkbot
     url: http://werkbot.com
-    logo: 'werkbot.png'
-  - name: ECGRA
+    logo: 'werkbot.svg'
+  - name: ExecutivePulse
     url: http://ecgra.org
-    logo: 'ecgra.jpg'
-  - name: Ben Franklin Technology Partners
-    url: http://benfranklin.org
-    logo: 'bftp.jpg'
-  - name: Larson Texts
-    url: http://larsontexts.com
-    logo: 'larson.png'
-  - name: Tech Tank
-    url: http://tech-tank.com
-    logo: 'techtank.jpg'
-community:
-  - name: Integer 32, LLC.  A Rust Consultancy.
-    url: https://twitter.com/integer32llc
-    logo: 'integer32-logo.png'
-promotional:
-  - name: Komodo IDE by ActiveState
-    url: http://komodoide.com
-    logo: 'komodo-logo.png'
+    logo: 'executive-pulse.gif'
+  - name: Laravel Forge
+    url: http://forge.laravel.com
+    logo: 'laravel-logo.png'

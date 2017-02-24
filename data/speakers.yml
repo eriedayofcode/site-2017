@@ -1,8 +1,24 @@
-- name: Adam Wathan
-  image: /images/speakers/adam-wathan.png
-  twitter: "adamwathan"
-  about: Host @ Full Stack Radio (@FullStackRadio). Senior Developer @ Tighten Co.
-- name: "Jesse O'Brien & Caryn Humphreys"
-  image: /images/speakers/jesse-and-caryn.png
-  twitter: "adamwathan"
-  about: Host @ Full Stack Radio (@FullStackRadio). Senior Developer @ Tighten Co.
+- name: Carol (Nichols || Goulding)
+  image: /images/speakers/carol-nichols.jpg
+  twitter: "carols10cents"
+  talk_title: Rust out your C
+  about: |-
+    Co-founder of [Integer32](http://integer32.com), the world’s first Rust consultancy. Member of the [Rust Tooling and Community teams](https://www.rust-lang.org/en-US/team.html). Co-author of [The Rust Programming Language](http://rust-lang.github.io/book/). Organizer of [Rust Belt Rust](http://www.rust-belt-rust.com/). Doer of way too many things.
+- name: Chris Winters
+  image: /images/speakers/chris-winters.jpg
+  twitter: "cwinters"
+  talk_title: Docker stuff
+  about: |-
+    Solves problems with code and teams, learning to get better at managing at [Turnitin](http://turnitin.com) Pittsburgh where they help students write to learn.
+- name: Manda Brown
+  image: /images/speakers/manda-brown.jpg
+  twitter: "bits_for_a_soul"
+  talk_title: Functional Programming in the Browser with Elm
+  about: |-
+    Senior Software Developer at [Imagine Learning](http://imaginelearning.com).
+#- name: Amanda Folson
+#  image: /images/speakers/amanda-folson.jpg
+#  twitter: "AmbassadorAwsum"
+#  talk_title: Being Dank
+#  about: |-
+#    Devangelist at [GitLab](http://gitlab.com). Dank.

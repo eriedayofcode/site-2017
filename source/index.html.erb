@@ -1,495 +1,271 @@
 ---
-title: Erie Day of Code 2016 | June 17 @ <%= venue.name %>
+title: Erie Day of Code 2017 | June 16 @ <%= venue.name %>
 ---
 
 <div class="home">
-  <div class="row">
-    <div class="col-lg-12">
-      <%= image_tag 'venue.jpg', alt: venue.name, title: venue.name, class: 'venue-photo' %>
-    </div>
-  </div>
   <div class="event-description">
-    <p>
-      The second annual Erie Day of Code is a one-day, single-track conference
-      for web developers, computer scientists, creatives, tech enthusiasts, and
-      more! Through a series of talks from incredible speakers, and an after
-      party to connect with your peers, we aim to help developers in the expand
-      their skillsets, networks, and minds.
-    </p>
-    <p>
-      Talks this year are targeted at major areas in software engineering, from
-      design through development to deployment. Erie Day of Code promotes
-      open source in code, community, and ideology. We want to share as much as
-      we can with you, and hope you will help share your knowledge with your
-      peers!
-    </p>
-  </div>
-
-  <section id="ticket-purchase">
-    <h1>Tickets are on Sale!</h1>
-    <div class="row">
-      <div class="col-lg-12">
-          <p class="purchase-button-wrap">
-            <a href="https://eriedayofcode.ticketleap.com/2016/dates/Jun-17-2016_at_0900AM"
-               class="btn btn-primary btn-lg"
-               target="_blank">
-                Get Yours Now!
-            </a>
-          </p>
-
-          <div class="row">
-              <div class="col-lg-8 col-lg-offset-2">
-                  <p class="instructions">
-                    Registration starts at 8:00am so we're ready to go for the
-                    first speaker at 9:00am! <br/> You may bring your printed ticket to be
-                    scanned, or we can look up your name at the registration table.
-                  </p>
-              </div>
-          </div>
-      </div>
+    <div class="container">
+      <p>
+        The third annual Erie Day of Code is a one-day, single-track conference
+        for web developers, computer scientists, creatives, tech enthusiasts, and
+        more! Through a series of talks from incredible speakers, and an after
+        party to connect with your peers, we aim to help developers in the expand
+        their skillsets, networks, and minds.
+      </p>
+      <p>
+        Talks this year are targeted at major areas in software engineering, from
+        design through development to deployment. Erie Day of Code promotes
+        open source in code, community, and ideology. We want to share as much as
+        we can with you, and hope you will help share your knowledge with your
+        peers!
+      </p>
     </div>
-  </section>
+  </div>
 
   <section id="mailing-list-signup">
-    <h1>Stay up to Date</h1>
-    <h2>Subscribe to our mailing list for updates and ticket sales</h2>
-    <div class="row">
-      <div class="col-lg-12">
-        <form action="<%= mailing_list_url %>"
-              id="mailing-list-subscribe-form"
-              class="form"
-              method="post"
-              name="mc-embedded-subscribe-form"
-              target="_blank">
-          <div class="form-group row">
-            <label class="sr-only" for="email">Email Address</label>
-            <div class="col-lg-10">
-              <input type="email"
-                     class="form-control form-control-lg"
-                     id="email"
-                     name="EMAIL"
-                     placeholder="Enter Email Address">
+    <div class="container">
+      <h1>Stay up to Date</h1>
+      <h2>Subscribe to our mailing list for updates and ticket sales</h2>
+      <div class="row">
+        <div class="col-lg-12">
+          <form action="<%= mailing_list_url %>"
+                id="mailing-list-subscribe-form"
+                class="form"
+                method="post"
+                name="mc-embedded-subscribe-form"
+                target="_blank">
+            <div class="form-group row">
+              <label class="sr-only" for="email">Email Address</label>
+              <div class="col-lg-10">
+                <input type="email"
+                       class="form-control form-control-lg"
+                       id="email"
+                       name="EMAIL"
+                       placeholder="Enter Email Address">
+              </div>
+
+              <div class="col-lg-2">
+                <input class="btn btn-primary btn-block btn-lg"
+                       name="subscribe"
+                       type="submit"
+                       value="Subscribe" />
+              </div>
             </div>
 
-            <div class="col-lg-2">
-              <input class="btn btn-primary btn-block btn-lg"
-                     name="subscribe"
-                     type="submit"
-                     value="Subscribe" />
+            <div style="position: absolute; left: -5000px;">
+              <input name="b_3fcd98d64025f034a082fe384_bb907d9e18"
+                     tabindex="-1"
+                     type="text" />
             </div>
-          </div>
-
-          <div style="position: absolute; left: -5000px;">
-            <input name="b_3fcd98d64025f034a082fe384_bb907d9e18"
-                   tabindex="-1"
-                   type="text" />
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
-  </section>
-
-  <section id="agenda">
-    <h1>Agenda</h1>
-    <% data.schedule.each do |i| %>
-      <article class="agenda-row <%= i.type %>">
-        <div class="row">
-          <div class="col-lg-2 time-col">
-            <p class="time"><%= i.time %></p>
-          </div>
-          <div class="col-lg-7 info-col">
-            <h2 class="title"><%= i.title %></h2>
-            <% if i.description %>
-              <div class="description"><%= md_text i.description %></div>
-            <% end %>
-          </div>
-          <div class="col-lg-3 speaker-col">
-            <% if i.type == 'talk' %>
-              <%= image_tag i.speaker.image, alt: i.speaker.name, title: i.speaker.name, class: 'speaker-photo' %>
-              <h3 class="speaker-name"><%= i.speaker.name %></h3>
-            <% end %>
-          </div>
-        </div>
-      </article>
-    <% end %>
   </section>
 
   <section id="speakers">
-    <h1>Speakers</h1>
+    <div class="container">
+      <h1>Speakers</h1>
 
-    <div class="row">
-      <div class="col-lg-6">
-        <article class="speaker">
-          <%= image_tag 'speakers/adam-wathan.jpg', class: 'speaker-photo', alt: 'Adam Wathan' %>
-          <h3 class="name">
-            <%= link_to "Adam Wathan", "https://twitter.com/adamwathan" %>
-          </h3>
-          <h4 class="talk-title">
-            Sweating the Details
-          </h4>
-          <p class="info">
-            Host of
-            <%= link_to "Full Stack Radio", "https://twitter.com/fullstackradio" %>
-            and author of
-            <%= link_to "Refactoring to Collections", "http://adamwathan.me/refactoring-to-collections/" %>.
-
-            <br>
-            Senior Developer at <%= link_to "Tighten Co.", "http://tighten.co" %>.
-          </p>
-        </article>
-      </div>
-
-      <div class="col-lg-6">
-        <article class="speaker">
-          <%= image_tag 'speakers/jesse-and-caryn.jpg', class: 'speaker-photo', alt: "Jesse O'Brien & Caryn Humphreys" %>
-          <h3 class="name">
-            <%= link_to "Jesse O'Brien", "https://twitter.com/jesseobrien_" %>
-            &
-            <%= link_to "Caryn Humphreys", "https://twitter.com/ladycarni" %>
-          </h3>
-          <h4 class="talk-title">
-            Project Utopia
-          </h4>
-          <div class="row">
+      <% data.speakers.each_slice(2) do |pair| %>
+        <div class="row">
+          <% pair.each do |speaker| %>
             <div class="col-lg-6">
-              <p class="info">
-                Laravel old-guard, Golang and space enthusiast.
-              </p>
+              <article class="speaker">
+                <%= image_tag "#{speaker.image}", class: 'speaker-photo', alt: speaker.name %>
+                <h3 class="name">
+                  <%= link_to speaker.name, "https://twitter.com/#{speaker.twitter}" %>
+                </h3>
+                <h4 class="talk-title">
+                  <%= speaker.talk_title %>
+                </h4>
+                <p class="info">
+                  <%= md_text(speaker.about) %>
+                </p>
+              </article>
             </div>
-            <div class="col-lg-6">
-              <p class="info">
-                UX aficionado, board gamer, expat currently conquering Canada
-              </p>
-            </div>
-          </div>
-          <p class="info">
-            Web Developer and Product Designer at
-            <%= link_to "Vehikl", "http://vehikl.com" %>.
-          </p>
-        </article>
-      </div>
-    </div>
+          <% end %>
+        </div>
+      <% end %>
 
-    <div class="row">
-      <div class="col-lg-6">
-        <article class="speaker">
-          <%= image_tag 'speakers/andre-henry.png', class: 'speaker-photo', alt: "André Henry" %>
-          <h3 class="name">
-            <%= link_to "André Henry", "https://twitter.com/7grok" %>
-          </h3>
-          <h4 class="talk-title">
-            So You Want to Deploy That...
-          </h4>
-          <p class="info">
-            Systems Engineer at <%= link_to "Think Through Math", "http://thinkthroughmath.com/" %>.
-            <br>
-            Owner of really powerful lasers.
-          </p>
-        </article>
-      </div>
-
-      <div class="col-lg-6">
-        <article class="speaker">
-          <%= image_tag 'speakers/mat-silva.jpg', class: 'speaker-photo', alt: 'Mat Silva' %>
-          <h3 class="name">
-            <%= link_to "Mat Silva", "https://twitter.com/matsilva" %>
-          </h3>
-          <h4 class="talk-title">
-            Building a Startup in Erie
-          </h4>
-          <p class="info">
-            CTO, Co-founder of <%= link_to "RendrFX", "http://rendrfx.com/" %>.
-            <br>
-            Erie's own React JS Evangelist.
-          </p>
-        </article>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-6">
-        <article class="speaker">
-          <%= image_tag 'speakers/tim-bickerton.jpg', class: 'speaker-photo', alt: "Tim Bickerton" %>
-          <h3 class="name">
-            <%= link_to "Tim Bickerton", "https://twitter.com/timbickerton" %>
-          </h3>
-          <h4 class="talk-title">
-            Unleash the Power of NO
-          </h4>
-          <p class="info">
-            VP of Product Development and Operations
-            at <%= link_to "Think Through Math", "http://thinkthroughmath.com/" %>.
-            <br>
-            This speaker is brought to you by the letters PMP, MBA, MS, CSM, &amp; CSPO.
-          </p>
-        </article>
-      </div>
-
-      <div class="col-lg-6">
-        <article class="speaker">
-          <%= image_tag 'speakers/jon-knapp.png', class: 'speaker-photo', alt: "Jon Knapp" %>
-          <h3 class="name">
-            <%= link_to "Jon Knapp", "https://twitter.com/coffeeandcode" %>
-          </h3>
-          <h4 class="talk-title">
-            Building "Serverless" Software with AWS Lambda
-          </h4>
-          <p class="info">
-            Owner of
-            <%= link_to "Coffee and Code", "http://www.coffeeandcode.com/?utm_source=eriedayofcode.com&utm_medium=speaker_bio_link&utm_campaign=speaking" %>.
-            <br>
-            Lover of tacos.
-          </p>
-        </article>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-6">
-        <article class="speaker">
-          <%= image_tag 'speakers/jesi-major.png', class: 'speaker-photo', alt: "Jessica Major" %>
-          <h3 class="name">
-            <%= link_to "Jessica Major", "https://twitter.com/redstonemercury" %>
-          </h3>
-          <h4 class="talk-title">
-            Docker Time! C'mon grab your friends...
-          </h4>
-          <p class="info">
-            DevOps Engineer
-            at <%= link_to "Deviant Art", "http://deviantart.com/" %>.
-            <br>
-            Lover of animals. Hero of Servers. Slayer of bugs.
-          </p>
-        </article>
-      </div>
-      <div class="col-lg-6">
-        <article class="speaker">
-          <%= image_tag 'speakers/bill-laboon.jpg', class: 'speaker-photo', alt: "Bill Laboon" %>
-          <h3 class="name">
-            <%= link_to "Bill Laboon", "https://twitter.com/billlaboon" %>
-          </h3>
-          <h4 class="talk-title">
-            Thinking Functionally
-          </h4>
-          <p class="info">
-            Visiting Lecturer at the University of Pittsburgh
-            <br>
-            Author of
-            <%= link_to "A Friendly Introduction to Software Testing", "https://www.amazon.com/Friendly-Introduction-Software-Testing-ebook/dp/B01BCPXLHU" %>.
-          </p>
-        </article>
-      </div>
+      <p class="site-notice">
+        More speakers to be announced soon!
+        <%= link_to 'Submit your talk!', cfp_url %>
+      </p>
     </div>
   </section>
 
   <section id="venue">
-    <h1>Venue</h1>
-    <%= image_tag 'eam-shot.jpg', alt: venue.name, title: venue.name %>
-    <br>
-    <h2 class="name"><%= link_to venue.name, venue.url %></h2>
-    <address>
-      <p><%= venue.street %></p>
-      <p><%= venue.address_line %></p>
-    </address>
+    <div class="container">
+      <h1>Venue</h1>
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="name"><%= link_to venue.name, venue.url %></h2>
 
-    <p>
-      The Erie Art Museum is one of the best places in Erie to hold events.
-      The historic downtown gallery building blows out to include an enormous
-      modern architectural wing with an event space and café. The building Spans
-      most of the block between 4th and State St., and 5th and French St.
-      The conference entrance will be through the large glass doors of the
-      Wave Café on 5th street. Once inside, the large gallery hall with the main
-      stage for Erie Day of Code will be immediately to your left.
-      You're more than welcome to check out the various collections at the museum
-      during intermissions or lunch the conference for free!
-    </p>
+          <address>
+            <p><%= venue.street %></p>
+            <p><%= venue.address_line %></p>
+          </address>
 
-    <div class="embedded-map hidden-sm-down">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11835.628400315789!2d-80.085217!3d42.130872!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x24059a439df897ed!2sErie+Art+Museum!5e0!3m2!1sen!2sus!4v1458431315024" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
+          <p>
+            The Erie Art Museum is one of the best places in Erie to hold events.
+            The historic downtown gallery building blows out to include an enormous
+            modern architectural wing with an event space and café. The building Spans
+            most of the block between 4th and State St., and 5th and French St.
+            The conference entrance will be through the large glass doors of the
+            Wave Café on 5th street. Once inside, the large gallery hall with the main
+            stage for Erie Day of Code will be immediately to your left.
+            You're more than welcome to check out the various collections at the museum
+            during intermissions or lunch the conference for free!
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <%= image_tag 'eam-shot.jpg', alt: venue.name, title: venue.name, class: 'venue-photo'%>
+        </div>
 
-    <article id="parking">
-      <p class="site-notice">Parking information coming soon</p>
-    </article>
+        <div class="col-lg-12">
+          <div class="embedded-map hidden-sm-down">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11835.628400315789!2d-80.085217!3d42.130872!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x24059a439df897ed!2sErie+Art+Museum!5e0!3m2!1sen!2sus!4v1458431315024" width="650" height="440" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <article id="parking">
+        <p class="site-notice">Parking information coming soon</p>
+      </article>
   </section>
 
   <section id="lodging">
-    <h1>Lodging</h1>
-    <p>
-      Tourism is huge in Erie, so if you're coming in from out of town there are
-      plenty of places for you to stay. Here are some options near by:
-    </p>
+    <div class="container">
+      <h1>Lodging</h1>
+      <p class="lodging-info">
+        Tourism is huge in Erie, so if you're coming in from out of town there are
+        plenty of places for you to stay. Here are some options near by:
+      </p>
 
-    <div class="row">
-      <div class="col-lg-6">
-        <h2>Walking Distance</h2>
-        <% close_lodging.each do |place| %>
-          <article class="place">
-            <h3><%= link_to place.name, place.url %></h3>
-            <div class="contact">
-              <address>
-                <p class="distance"><%= place.distance %> from the Venue</p>
-                <p>
-                  <%= place.address %>
-                  (<%= link_to "Directions", place.directions, target: '_blank' %>)
-                </p>
-                <p><%= "#{place.city_state} #{place.zipcode}" %></p>
-                <p>
-                  <a href="tel:+1<%= place.phone.gsub(/[^\d]/, "") %>">
-                    <%= place.phone %>
-                  </a>
-                </p>
-              </address>
-              <p><%= place.reason %></p>
-            </div>
-          </article>
-        <% end %>
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>Walking Distance</h2>
+          <% close_lodging.each do |place| %>
+            <article class="place">
+              <h3><%= link_to place.name, place.url %></h3>
+              <div class="contact">
+                <address>
+                  <p class="distance"><%= place.distance %> from the Venue</p>
+                  <p>
+                    <%= place.address %>
+                    (<%= link_to "Directions", place.directions, target: '_blank' %>)
+                  </p>
+                  <p><%= "#{place.city_state} #{place.zipcode}" %></p>
+                  <p>
+                    <a href="tel:+1<%= place.phone.gsub(/[^\d]/, "") %>">
+                      <%= place.phone %>
+                    </a>
+                  </p>
+                </address>
+                <p><%= place.reason %></p>
+              </div>
+            </article>
+          <% end %>
+        </div>
+        <div class="col-lg-6">
+          <h2>A Bit Further With Attractions</h2>
+          <% further_lodging.each do |place| %>
+            <article class="place">
+              <h3><%= link_to place.name, place.url %></h3>
+              <div class="contact">
+                <address>
+                  <p class="distance"><%= place.distance %> from the Venue</p>
+                  <p>
+                    <%= place.address %>
+                    (<%= link_to "Directions", place.directions, target: '_blank' %>)
+                  </p>
+                  <p><%= "#{place.city_state} #{place.zipcode}" %></p>
+                  <p>
+                    <a href="tel:+1<%= place.phone.gsub(/[^\d]/, "") %>">
+                      <%= place.phone %>
+                    </a>
+                  </p>
+                </address>
+                <p><%= place.reason %></p>
+              </div>
+
+            </article>
+          <% end %>
+        </div>
       </div>
-      <div class="col-lg-6">
-        <h2>A Bit Further With Attractions</h2>
-        <% further_lodging.each do |place| %>
-          <article class="place">
-            <h3><%= link_to place.name, place.url %></h3>
-            <div class="contact">
-              <address>
-                <p class="distance"><%= place.distance %> from the Venue</p>
-                <p>
-                  <%= place.address %>
-                  (<%= link_to "Directions", place.directions, target: '_blank' %>)
-                </p>
-                <p><%= "#{place.city_state} #{place.zipcode}" %></p>
-                <p>
-                  <a href="tel:+1<%= place.phone.gsub(/[^\d]/, "") %>">
-                    <%= place.phone %>
-                  </a>
-                </p>
-              </address>
-              <p><%= place.reason %></p>
-            </div>
 
-          </article>
-        <% end %>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-6 col-lg-offset-3">
-        <p class="site-notice">
-          If you'd prefer to avoid walking or driving to and from the venue while in
-          town, Erie has a <%= link_to "bus line", data.info.bus_line_url %>
-          that runs up on State St. most of the day and Uber has service here as
-          well.
-        </p>
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+          <p class="site-notice">
+            If you'd prefer to avoid walking or driving to and from the venue while in
+            town, Erie has a <%= link_to "bus line", data.info.bus_line_url %>
+            that runs up on State St. most of the day and Uber has service here as
+            well.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="sponsors">
-    <h1>Sponsors</h1>
-    <h4 class="prospectus-text site-notice">
-      Interested in sponsoring?  Check out our
-      <%= link_to 'Prospectus', "/edoc2016-prospectus.pdf", class: 'prospectus-link', target: '_blank' %>
-      for information.
-    </h4>
+    <div class="container">
+      <h1>Sponsors</h1>
+      <h4 class="prospectus-text site-notice">
+        Interested in sponsoring?  Check out our
+        <%= link_to 'Prospectus', "/edoc2016-prospectus.pdf", class: 'prospectus-link', target: '_blank' %>
+        for information.
+      </h4>
 
-    <section id="sponsor-partners">
-      <h1 class="partners">Partners</h1>
+      <section id="sponsor-partners">
+        <h1 class="partners">Partners</h1>
 
-      <div class="row">
-        <% data.sponsors.partners.each do |s| %>
-          <div class="col-lg-6">
-            <article class="sponsor">
-              <% link_to s.url, target: '_blank' do %>
-                <%= image_tag "sponsors/#{s.logo}", alt: s.name, title: s.name, class: 'logo' %>
-              <% end %>
-            </article>
+        <div class="row">
+          <% data.sponsors.partners.each do |s| %>
+            <div class="col-lg-4 col-lg-offset-4">
+              <article class="sponsor">
+                <% link_to s.url, target: '_blank' do %>
+                  <%= image_tag "sponsors/#{s.logo}", alt: s.name, title: s.name, class: 'logo' %>
+                <% end %>
+              </article>
+            </div>
+          <% end %>
+        </div>
+      </section>
+
+      <section id="sponsor-gold">
+        <h1 class="gold">Gold</h1>
+
+        <% data.sponsors.gold.each do |s| %>
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <article class="sponsor">
+                <% link_to s.url, target: '_blank' do %>
+                  <%= image_tag "sponsors/#{s.logo}", alt: s.name, title: s.name, class: 'logo' %>
+                <% end %>
+              </article>
+            </div>
           </div>
         <% end %>
-      </div>
-    </section>
-    <section id="sponsor-platinum">
-      <h1 class="platinum">Platinum</h1>
+      </section>
 
-      <div class="row">
-        <% data.sponsors.platinum.each do |s| %>
-          <div class="col-lg-6">
-            <article class="sponsor">
-              <% link_to s.url, target: '_blank' do %>
-                <%= image_tag "sponsors/#{s.logo}", alt: s.name, title: s.name, class: 'logo' %>
-              <% end %>
-              <p class="blurb"><%= s.blurb %></p>
-            </article>
+      <section id="sponsor-silver">
+        <h1 class="silver">Silver</h1>
+
+        <% data.sponsors.silver.each do |s| %>
+          <div class="row">
+            <div class="col-lg-6 col-lg-offset-3">
+              <article class="sponsor">
+                <% link_to s.url, target: '_blank' do %>
+                  <%= image_tag "sponsors/#{s.logo}", alt: s.name, title: s.name, class: 'logo' %>
+                <% end %>
+              </article>
+            </div>
           </div>
         <% end %>
-      </div>
-    </section>
-    <section id="sponsor-gold">
-      <h1 class="gold">Gold</h1>
-
-      <% data.sponsors.gold.each_slice(2) do |group| %>
-        <div class="row">
-          <% group.each do |s| %>
-            <div class="col-lg-6">
-              <article class="sponsor">
-                <% link_to s.url, target: '_blank' do %>
-                  <%= image_tag "sponsors/#{s.logo}", alt: s.name, title: s.name, class: 'logo' %>
-                <% end %>
-              </article>
-            </div>
-          <% end %>
-        </div>
-      <% end %>
-    </section>
-    <section id="sponsor-silver">
-      <h1 class="silver">Silver</h1>
-
-      <% data.sponsors.silver.each_slice(2) do |group| %>
-        <div class="row">
-          <% group.each do |s| %>
-            <div class="col-lg-6">
-              <article class="sponsor">
-                <% link_to s.url, target: '_blank' do %>
-                  <%= image_tag "sponsors/#{s.logo}", alt: s.name, title: s.name, class: 'logo' %>
-                <% end %>
-              </article>
-            </div>
-          <% end %>
-        </div>
-      <% end %>
-    </section>
-    <section id="sponsor-promotional">
-      <h1 class="silver">Promotional</h1>
-
-      <% data.sponsors.promotional.each_slice(2) do |group| %>
-        <div class="row">
-          <% group.each do |s| %>
-            <div class="col-lg-6">
-              <article class="sponsor">
-                <% link_to s.url, target: '_blank' do %>
-                  <%= image_tag "sponsors/#{s.logo}", alt: s.name, title: s.name, class: 'logo' %>
-                <% end %>
-              </article>
-            </div>
-          <% end %>
-        </div>
-      <% end %>
-    </section>
-    <section id="sponsor-community">
-      <h1 class="silver">Community Supporters</h1>
-
-      <% data.sponsors.community.each_slice(2) do |group| %>
-        <div class="row">
-          <% group.each do |s| %>
-            <div class="col-lg-6">
-              <article class="sponsor">
-                <% link_to s.url, class: 'community-support', target: '_blank' do %>
-                  <%= image_tag "sponsors/#{s.logo}", alt: s.name, title: s.name, class: 'logo' %>
-                <% end %>
-              </article>
-            </div>
-          <% end %>
-        </div>
-      <% end %>
-    </section>
+      </section>
   </section>
+    </div>
+    </div>
+
 </div>

@@ -143,34 +143,37 @@ title: Erie Day of Code 2017 | June 16 @ <%= venue.name %>
         plenty of places for you to stay. Here are some options near by:
       </p>
 
+      <h2>Walking Distance</h2>
       <div class="row">
-        <div class="col-lg-6">
-          <h2>Walking Distance</h2>
-          <% close_lodging.each do |place| %>
-            <article class="place">
-              <h3><%= link_to place.name, place.url %></h3>
-              <div class="contact">
-                <address>
-                  <p class="distance"><%= place.distance %> from the Venue</p>
-                  <p>
-                    <%= place.address %>
-                    (<%= link_to "Directions", place.directions, target: '_blank' %>)
-                  </p>
-                  <p><%= "#{place.city_state} #{place.zipcode}" %></p>
-                  <p>
-                    <a href="tel:+1<%= place.phone.gsub(/[^\d]/, "") %>">
-                      <%= place.phone %>
-                    </a>
-                  </p>
-                </address>
-                <p><%= place.reason %></p>
-              </div>
-            </article>
+          <% close_lodging.each_with_index do |place| %>
+            <div class="col-lg-6">
+              <article class="place">
+                <h3><%= link_to place.name, place.url %></h3>
+                <div class="contact">
+                  <address>
+                    <p class="distance"><%= place.distance %> from the Venue</p>
+                    <p>
+                      <%= place.address %>
+                      (<%= link_to "Directions", place.directions, target: '_blank' %>)
+                    </p>
+                    <p><%= "#{place.city_state} #{place.zipcode}" %></p>
+                    <p>
+                      <a href="tel:+1<%= place.phone.gsub(/[^\d]/, "") %>">
+                        <%= place.phone %>
+                      </a>
+                    </p>
+                  </address>
+                  <p><%= place.reason %></p>
+                </div>
+              </article>
+            </div>
           <% end %>
-        </div>
-        <div class="col-lg-6">
-          <h2>A Bit Further With Attractions</h2>
-          <% further_lodging.each do |place| %>
+      </div>
+
+      <h2>A Bit Further With Attractions</h2>
+      <div class="row">
+        <% further_lodging.each do |place| %>
+          <div class="col-lg-6">
             <article class="place">
               <h3><%= link_to place.name, place.url %></h3>
               <div class="contact">
@@ -191,8 +194,8 @@ title: Erie Day of Code 2017 | June 16 @ <%= venue.name %>
               </div>
 
             </article>
-          <% end %>
-        </div>
+          </div>
+        <% end %>
       </div>
 
       <div class="row">

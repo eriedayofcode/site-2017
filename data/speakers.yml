@@ -2,7 +2,7 @@
   image: /images/speakers/carol-nichols.jpg
   twitter: "carols10cents"
   talk_title: Rust out your C
-  about: |-
+  about: |
     Co-founder of [Integer32](http://integer32.com), the world’s first Rust consultancy. Member of the [Rust Tooling and Community teams](https://www.rust-lang.org/en-US/team.html). Co-author of [The Rust Programming Language](http://rust-lang.github.io/book/). Organizer of [Rust Belt Rust](http://www.rust-belt-rust.com/). Doer of way too many things.
 - name: Chris Winters
   image: /images/speakers/chris-winters.jpg

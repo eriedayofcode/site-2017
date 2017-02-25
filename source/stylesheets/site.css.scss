@@ -188,16 +188,19 @@ address {
   padding-bottom: 2rem;
 
   .name {
-    font-size: 18px;
+    font-size: 1.4rem;
+    font-weight: 700;
     color: $neutral-color;
   }
 
   .talk-title {
-    font-size: 16px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $secondary-color;
   }
 
   .info {
-    //font-size: 16px;
+    font-size: 1.0rem;
   }
 }
 

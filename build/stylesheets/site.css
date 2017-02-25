@@ -121,10 +121,15 @@ address p {
   text-align: center;
   padding-bottom: 2rem; }
   .speaker .name {
-    font-size: 18px;
+    font-size: 1.4rem;
+    font-weight: 700;
     color: #AAA; }
   .speaker .talk-title {
-    font-size: 16px; }
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #005B94; }
+  .speaker .info {
+    font-size: 1.0rem; }
 
 .speaker-photo {
   border-radius: 50%;

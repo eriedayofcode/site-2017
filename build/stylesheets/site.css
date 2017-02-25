@@ -7,77 +7,119 @@ h3 {
 a {
   color: #00AAE7; }
   a:hover {
-    color: #005B94; }
+    color: #84C661; }
 
-section, .venue-photo, .logo-container {
-  margin-top: 20px; }
+.hero {
+  background: url("/images/edoc-adam-crowd.jpg") 0 0; }
+  .hero .logo-container {
+    padding-top: 5.25rem; }
+  .hero .event-info {
+    padding-top: 4rem;
+    margin-bottom: 2.5rem; }
+    .hero .event-info .date {
+      padding-bottom: 0; }
+
+section, .event-description, #mailing-list-signup {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  section h1, .event-description h1, #mailing-list-signup h1 {
+    text-align: center;
+    color: black; }
+
+#mailing-list-signup {
+  background-color: #00AAE7; }
+  #mailing-list-signup h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 2rem; }
+
+#lodging {
+  background-color: #84C661;
+  color: white; }
+  #lodging h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: black; }
+  #lodging h3 a {
+    color: white; }
+  #lodging .site-notice {
+    color: black; }
+  #lodging .lodging-info {
+    text-align: center; }
+  #lodging a {
+    color: #005B94; }
 
 body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em; }
+  font-size: 1.1em; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Merriweather", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400; }
 
 .event-info h1 {
   font-size: 2.0rem;
   text-align: center; }
+.event-info h2 {
+  text-align: center;
+  padding: 0;
+  margin: 0; }
 .event-info h3, .event-info h4 {
   font-wight: 400; }
+.event-info .purchase-button-wrap {
+  text-align: center; }
+
+section h1 {
+  padding-bottom: 3rem; }
 
 .bg-primary {
-  background-color: #005B94 !important; }
+  background-color: #84C661 !important; }
   .bg-primary a {
     color: white; }
     .bg-primary a:hover {
-      color: #00AAE7; }
+      color: #005B94; }
 
 .btn-primary {
-  background-color: #005B94;
-  border: 1px solid #005B94; }
+  background-color: #84C661;
+  border: 1px solid #84C661; }
 
 .btn-primary-outline {
-  border: 1px solid #005B94;
-  color: #005B94; }
+  border: 1px solid #84C661;
+  color: #84C661; }
 
 img {
   width: 100%; }
 
 h1 {
-  color: #005B94; }
+  color: #84C661; }
 
 h2 {
-  color: #84C661; }
+  color: #005B94; }
 
 h3 {
   color: #00AAE7;
   font-size: 1.5rem; }
 
 .site-footer {
-  border-top: 2px dashed #005B94;
+  border-top: 2px dashed #84C661;
   margin-top: 20px;
-  padding: 15px 0;
-  text-align: center; }
+  padding: 3rem 0;
+  text-align: center;
+  background-color: #84C661;
+  color: white; }
+  .site-footer a {
+    color: #005B94; }
 
 address p {
   margin: 0; }
-
-.home > section {
-  margin-top: 20px;
-  border-top: 1px dashed #00AAE7;
-  padding-top: 15px; }
-  .home > section h1 {
-    text-align: center; }
-  .home > section#mailing-list-signup h2, .home > section#ticket-purchase h2 {
-    text-align: center;
-    font-size: 1.5rem; }
 
 #ticket-purchase .instructions {
   text-align: center; }
 
 .speaker {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 2rem; }
   .speaker .name {
     font-size: 18px;
     color: #AAA; }
@@ -94,12 +136,22 @@ address p {
   text-align: center;
   color: #AAA; }
 
-#venue .name {
-  font-size: 1rem;
-  margin: 0;
-  margin-top: 20px; }
-#venue .embedded-map {
-  text-align: center; }
+#venue {
+  background-color: #00AAE7;
+  color: white; }
+  #venue .name {
+    margin: 0;
+    color: black; }
+    #venue .name a {
+      color: black; }
+  #venue .venue-photo {
+    width: 100%; }
+  #venue .embedded-map {
+    text-align: center;
+    margin-top: 2rem; }
+  #venue .site-notice {
+    margin-top: 2rem;
+    color: #005B94; }
 
 #sponsors .prospectus-text {
   text-align: center;
@@ -110,31 +162,31 @@ address p {
     border-bottom: none; }
   #sponsors section h1 {
     font-size: 1.5rem;
-    color: #84C661; }
+    padding-bottom: 1.5rem;
+    color: #005B94; }
 #sponsors .sponsor {
   text-align: center;
   margin-bottom: 30px; }
   #sponsors .sponsor .logo {
-    max-height: 250px;
-    max-width: 250px; }
+    max-width: 100%;
+    display: block; }
 #sponsors #sponsor-platinum .sponsor .logo {
-  max-height: 350px;
-  max-width: 350px; }
+  max-height: 750px;
+  max-width: 500px; }
+#sponsors #sponsor-silver {
+  padding-bottom: 0; }
 #sponsors #sponsor-community .community-support {
   font-size: 1.5rem; }
 
 #lodging .distance {
-  color: #84C661; }
-
-.event-description {
-  margin-top: 15px; }
+  color: #005B94; }
 
 .purchase-button-wrap {
   margin-top: 20px;
   text-align: center; }
 
 #agenda .time {
-  color: #005B94;
+  color: #84C661;
   font-weight: bold; }
 #agenda .title {
   margin-top: 0;

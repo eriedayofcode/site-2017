@@ -7,7 +7,7 @@
 - name: Chris Winters
   image: /images/speakers/chris-winters.jpg
   twitter: "cwinters"
-  talk_title: Docker stuff
+  talk_title: Why Should I Care About Docker Anyway?
   about: |-
     Solves problems with code and teams, learning to get better at managing at [Turnitin](http://turnitin.com) Pittsburgh where they help students write to learn.
 - name: Manda Brown

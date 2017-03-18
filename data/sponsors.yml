@@ -16,3 +16,7 @@ silver:
   - name: Laravel Forge
     url: http://forge.laravel.com
     logo: 'laravel-logo.png'
+bronze:
+  - name: Larson Texts
+    url: http://larsontexts.com
+    logo: 'larson.png'

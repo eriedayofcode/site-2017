@@ -53,6 +53,10 @@ helpers do
     'https://goo.gl/forms/iObfuLgTJOwl8ovm2'
   end
 
+  def tickets_url
+    "https://eriedayofcode.ticketleap.com/2017/dates/Jun-16-2017_at_0845AM"
+  end
+
   def social_links
     OpenStruct.new(
       twitter: data.info.twitter_url,

@@ -74,7 +74,7 @@ title: Erie Day of Code 2017 | June 16 @ <%= venue.name %>
           <% pair.each do |speaker| %>
             <div class="col-lg-6">
               <article class="speaker">
-                <%= image_tag "#{speaker.image}", class: 'speaker-photo', alt: speaker.name %>
+                <%= image_tag "#{speaker.image}", class: ['speaker-photo', jenny_photo?(speaker) ? 'sandwich-tax' : nil].compact.join(' '), alt: speaker.name %>
                 <h3 class="name">
                   <%= link_to speaker.name, "https://twitter.com/#{speaker.twitter}" %>
                 </h3>

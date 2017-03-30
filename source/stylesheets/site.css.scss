@@ -209,6 +209,10 @@ address {
   max-width: 200px;
   max-height: 200px;
   text-align: center;
+
+  &.sandwich-tax {
+    padding-bottom: 50px;
+  }
 }
 
 .site-notice {

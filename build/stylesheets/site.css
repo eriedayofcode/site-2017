@@ -136,6 +136,8 @@ address p {
   max-width: 200px;
   max-height: 200px;
   text-align: center; }
+  .speaker-photo.sandwich-tax {
+    padding-bottom: 50px; }
 
 .site-notice {
   text-align: center;

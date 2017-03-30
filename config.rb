@@ -57,6 +57,10 @@ helpers do
     "https://eriedayofcode.ticketleap.com/2017/dates/Jun-16-2017_at_0845AM"
   end
 
+  def jenny_photo?(speaker)
+    speaker.name == 'Jenny Liu'
+  end
+
   def social_links
     OpenStruct.new(
       twitter: data.info.twitter_url,

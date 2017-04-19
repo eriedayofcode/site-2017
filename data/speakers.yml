@@ -26,6 +26,15 @@
     In this talk, Jenny will take the audience through her adventures as a non-technical member of two teams that, while very different from each other, fundamentally shaped her views about what makes teams successful. Through this walk down memory lane, Jenny not only hopes to pin down a working definition of product ownership (is there actually a difference between a product owner and a project manager?), but also share some tips for both product owners and developers on what they can do to help build and sustain an awesome, thoughtful team.
   bio: |-
     Jenny Liu is the Product Owner for the Revision Assistant team at Turnitin, an ed-tech company that provides teachers with tools to help engage students in the writing process. In her spare time, she’s either eating, cooking, or fantasizing about food. She also enjoys giving her partner-in-crime, Chris, a hard time, and showing waaaaaay too much affection to their four cats (yes, four!): Kamala, Sid, Evie, and Elsa. Don’t worry, there will be pictures of all four in her presentation.
+- name: PJ Hagerty
+  image: /images/speakers/pj-hagerty.jpg
+  twitter: "aspleenic"
+  talk_title: "From Turing to Big Data: A Look at Computing and Analytics"
+  about: |-
+    Developer, writer, speaker, musician, and Developer Advocate at [Logz.io](http://logz.io), PJ is known to travel the world speaking about programming and the way people think and interact.  He is also known for wearing hats.
+  abstract: |-
+    A look at where computing and analytics began and where it is headed. The basis of all DevOps and development starts with our measurements.  We need to understand what role analytics and metrics plays in modern computing.  To find out, we look at where analytics began in the advent of computer science and where we stand today, with an eye toward the future.
+
 
 #- name: Amanda Folson
 #  image: /images/speakers/amanda-folson.jpg

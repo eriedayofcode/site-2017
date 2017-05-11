@@ -23,6 +23,9 @@ bronze:
   - name: Larson Texts
     url: http://larsontexts.com
     logo: 'larson.png'
+  - name: Ben Franklin Technology Partners
+    url: http://cnp.benfranklin.org
+    logo: 'bftp.jpg'
 community:
   - name: Integer 32, LLC
     url: http://integer32.com

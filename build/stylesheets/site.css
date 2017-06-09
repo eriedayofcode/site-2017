@@ -192,26 +192,38 @@ address p {
   margin-top: 20px;
   text-align: center; }
 
-#agenda .time {
-  color: #84C661;
-  font-weight: bold; }
-#agenda .title {
-  margin-top: 0;
-  font-size: 1.2rem; }
-#agenda .speaker-name {
-  margin-top: 10px;
-  font-size: 1.1rem;
-  text-align: center;
-  color: #373a3c; }
-#agenda .agenda-row {
-  margin-top: 10px;
-  border-bottom: 1px dotted #ccc; }
-  #agenda .agenda-row:last-child {
-    border-bottom: none; }
-  #agenda .agenda-row.talk .title {
-    color: #00AAE7; }
-#agenda .speaker-col {
-  text-align: center; }
+#agenda {
+  background-color: #005B94;
+  color: white; }
+  #agenda h1 {
+    color: white; }
+  #agenda .time-col {
+    text-align: center; }
+  #agenda .title {
+    margin-top: 0;
+    font-size: 1.2rem; }
+  #agenda .speaker {
+    padding-bottom: 1rem; }
+  #agenda .speaker-name {
+    margin-top: 1rem;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: white; }
+  #agenda .speaker-photo {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 10px auto;
+    display: block; }
+  #agenda .agenda-row {
+    padding: 1rem;
+    margin-top: 0;
+    border-bottom: 1px dotted #ccc; }
+    #agenda .agenda-row:last-child {
+      border-bottom: none; }
+    #agenda .agenda-row.talk .title {
+      color: #00AAE7; }
+    #agenda .agenda-row.other .title {
+      margin-top: 0; }
 
 .today .agenda-row .time-col {
   font-size: 0.75rem; }

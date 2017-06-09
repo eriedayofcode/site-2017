@@ -65,6 +65,39 @@ title: Erie Day of Code 2017 | June 16 @ <%= venue.name %>
     </div>
   </section>
 
+  <section id="agenda">
+    <div class="container">
+      <h1>Agenda</h1>
+
+      <% data.agenda.each do |row| %>
+        <article class="agenda-row <%= row.type %>">
+          <div class="row">
+            <div class="col-lg-1 hidden-md-down"></div>
+            <div class="col-lg-3 col-md-4 time-col">
+              <%= row.time %>
+
+              <% if row.type == 'talk' %>
+                <div class="speaker">
+                  <%= image_tag row.speaker.image, class: 'speaker-photo hidden-md-down'%>
+                  <h3 class="speaker-name"><%= row.speaker.name %></h3>
+                </div>
+              <% end %>
+            </div>
+
+            <div class="col-md-7 info-col">
+              <h3 class="title"><%= row.title %></h3>
+              <% if row.type == 'talk' %>
+                <div class="description">
+                  <%= row.description %>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        </article>
+      <% end %>
+    </div>
+  </section>
+
   <section id="speakers">
     <div class="container">
       <h1>Speakers</h1>
@@ -89,11 +122,6 @@ title: Erie Day of Code 2017 | June 16 @ <%= venue.name %>
           <% end %>
         </div>
       <% end %>
-
-      <p class="site-notice">
-        More speakers to be announced soon!
-        <%= link_to 'Submit your talk by March 31!', cfp_url, target: '_blank' %>
-      </p>
     </div>
   </section>
 

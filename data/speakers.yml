@@ -18,6 +18,8 @@
   talk_title: Why Should I Care About Docker Anyway?
   about: |-
     Solves problems with code and teams, learning to get better at managing at [Turnitin](http://turnitin.com) Pittsburgh where they help students write to learn.
+  abstract: |-
+    There is nothing new under the sun -- everything you can do with containers you can do without. And Docker has lots of talk around it, which might make you as suspicious as I am that it's snake oil. But it's actually immensely useful! I'll talk about some ways we're using it: self-contained testing environments, enabling a continuous deployment pipline, and to bundle up difficult-to-install dependencies.
 - name: Manda Brown
   image: /images/speakers/manda-brown.jpg
   twitter: "manda_cfb"
@@ -32,8 +34,6 @@
     Product Owner for the Revision Assistant team at [Turnitin](http://turnitin.com). Unofficial Professional Food Connoisseur. Snuggler of four cats.
   abstract: |-
     In this talk, Jenny will take the audience through her adventures as a non-technical member of two teams that, while very different from each other, fundamentally shaped her views about what makes teams successful. Through this walk down memory lane, Jenny not only hopes to pin down a working definition of product ownership (is there actually a difference between a product owner and a project manager?), but also share some tips for both product owners and developers on what they can do to help build and sustain an awesome, thoughtful team.
-  bio: |-
-    Jenny Liu is the Product Owner for the Revision Assistant team at Turnitin, an ed-tech company that provides teachers with tools to help engage students in the writing process. In her spare time, she’s either eating, cooking, or fantasizing about food. She also enjoys giving her partner-in-crime, Chris, a hard time, and showing waaaaaay too much affection to their four cats (yes, four!): Kamala, Sid, Evie, and Elsa. Don’t worry, there will be pictures of all four in her presentation.
 - name: Matt Frost
   image: /images/speakers/matt-frost.jpg
   twitter: "shrtwhitebldguy"
@@ -42,7 +42,13 @@
     Director of Engineering at [Budget Dumpster](http://budgetdumpster.com). Die hard Cubs fan. Co-host of the [Loosely Coupled](http://looselycoupled.info) podcast. Possibly the friendliest and beardliest human in PHP.
   abstract: |-
     You've probably heard people talk about how important automated testing is to your software development process. It's a big topic, and it's easy to feel overwhelmed by a large code base that doesn't have a lot of test coverage. Fear not, our time together will cover different types of tests, how to start implenting tests into your codebase, and how to use those tests to improve the quality and predictability of your code. Whether you've been writing tests for years or are wondering how to get started, this talk has something for everyone!
-
+- name: Caleb Porzio
+  image: /images/speakers/caleb-porzio.jpg
+  twitter: "calebporzio"
+  talk_title: "Writing Code That Speaks"
+  about: |-
+    “Works with computers” at Tighten Co., according to his grandmother. Talks about PHP & Laravel on the [Twenty Percent Time](http://twentypercent.fm) podcast. Loves learning and teaching all things money.
+  abstract: ""
 
 #- name: Amanda Folson
 #  image: /images/speakers/amanda-folson.jpg

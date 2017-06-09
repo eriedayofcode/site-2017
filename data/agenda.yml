@@ -1,0 +1,91 @@
+- time: 8:00am - 8:50am
+  type: other
+  title: Registration
+
+- time: 8:50am - 9:00am
+  type: other
+  title: Opening Statements
+
+- time: 9:00am - 9:45am
+  type: talk
+  title: Rust Out Your C
+  description: |-
+    A look at where computing and analytics began and where it is headed. The basis of all DevOps and development starts with our measurements.  We need to understand what role analytics and metrics plays in modern computing.  To find out, we look at where analytics began in the advent of computer science and where we stand today, with an eye toward the future.
+  speaker:
+    name: "Carol (Nichols || Goulding)"
+    image: speakers/carol-nichols.jpg
+
+- time: 10:00am - 10:30am
+  type: talk
+  title: "Testing: A Love Story"
+  description: |-
+    You've probably heard people talk about how important automated testing is to your software development process. It's a big topic, and it's easy to feel overwhelmed by a large code base that doesn't have a lot of test coverage. Fear not, our time together will cover different types of tests, how to start implenting tests into your codebase, and how to use those tests to improve the quality and predictability of your code. Whether you've been writing tests for years or are wondering how to get started, this talk has something for everyone!
+  speaker:
+    name: Matt Frost
+    image: speakers/matt-frost.jpg
+
+- time: 10:45am - 11:15am
+  type: talk
+  title: Why Should I Care About Docker Anyway?
+  description: |-
+    There is nothing new under the sun -- everything you can do with containers you can do without. And Docker has lots of talk around it, which might make you as suspicious as I am that it's snake oil. But it's actually immensely useful! I'll talk about some ways we're using it: self-contained testing environments, enabling a continuous deployment pipline, and to bundle up difficult-to-install dependencies.
+  speaker:
+    name: Chris Winters
+    image: speakers/chris-winters.jpg
+
+- time: 11:30am - 12:00pm
+  type: talk
+  title: Writing Code That Speaks
+  description: |-
+    TBD
+  speaker:
+    name: Caleb Porzio
+    image: speakers/caleb-porzio.jpg
+
+- time: 12:00pm - 1:30pm
+  type: other
+  title: Lunch
+
+- time: 1:30pm - 2:l5pm
+  type: other
+  title: Lightning Talks
+  description: Do you have something you want to teach or an awesome project to show off?  Come early and be one of 5 people to sign up to give a lightning talk!
+
+- time: 2:30pm - 3:00pm
+  type: talk
+  title: "Tales of a Product Owner; or, a Foreigner’s Perspective in a Native Land"
+  description: |-
+    In this talk, Jenny will take the audience through her adventures as a non-technical member of two teams that, while very different from each other, fundamentally shaped her views about what makes teams successful. Through this walk down memory lane, Jenny not only hopes to pin down a working definition of product ownership (is there actually a difference between a product owner and a project manager?), but also share some tips for both product owners and developers on what they can do to help build and sustain an awesome, thoughtful team.
+  speaker:
+    name: Jenny Liu
+    image: speakers/jenny-liu.jpg
+
+- time: 3:15pm - 3:45pm
+  type: talk
+  title: Functional Programming in the Browser with Elm
+  description: |-
+    TBD
+  speaker:
+    name: Manda Brown
+    image: speakers/manda-brown.jpg
+
+- time: 4:00pm - 4:45pm
+  type: talk
+  title: "From Turing to Big Data: A Look at Computing and Analytics"
+  description: |-
+    A look at where computing and analytics began and where it is headed. The basis of all DevOps and development starts with our measurements.  We need to understand what role analytics and metrics plays in modern computing.  To find out, we look at where analytics began in the advent of computer science and where we stand today, with an eye toward the future.
+  speaker:
+    name: PJ Hagerty
+    image: speakers/pj-hagerty.jpg
+
+- time: 4:45pm - 5:00pm
+  type: other
+  title: Closing Remarks
+
+- time: 5:15pm - 9:00pm
+  type: other
+  title: After Party at the Brewerie!
+  description: |-
+    Come join us at the home of our first Erie Day of Code, The Brewerie, in an after party filled with great conversations, new friends, and even some hacking!  We will be occupying the upstairs and outdoors by the tracks if you'd like some fresh air.  If you and another developer from the day happen to have a great idea you'd like to work on, we'll have tables available for you to develop at, or simply play games at if talking loudly in a social setting is not your thing.
+
+    The downtown trolley will be available all day for free to run up and down State St. (Erie Art Museum is on 4th, Brewerie is on 14th) if you'd like a lift to or from the after party, but you can also park your car outside or very close to the Brewerie, or you can take a nice stroll through downtown.  Organizers and volunteers will be available to walk you to your vehicle.

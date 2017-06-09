@@ -314,9 +314,14 @@ address {
 }
 
 #agenda {
-  .time {
-    color: $primary-color;
-    font-weight: bold;
+  background-color: $secondary-color;
+  color: white;
+  h1 {
+    color: white;
+  }
+
+  .time-col {
+    text-align: center;
   }
 
   .title {
@@ -324,14 +329,29 @@ address {
     font-size: 1.2rem;
   }
 
+  .speaker {
+    padding-bottom: 1rem;
+  }
+
   .speaker-name {
-    margin-top: 10px;
+    margin-top: 1rem;
+    margin-bottom: 10px;
     font-size: 1.1rem;
-    text-align: center;
-    color: #373a3c;
+    color: white;
+  }
+
+  .speaker-photo {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 10px auto;
+    display:block;
   }
 
   .agenda-row {
+    padding: 1rem;
+    margin-top: 0;
+    border-bottom: 1px dotted #ccc;
+
     &:last-child {
       border-bottom: none;
     }
@@ -341,14 +361,8 @@ address {
     }
 
     &.other .title {
-
+      margin-top: 0;
     }
-    margin-top: 10px;
-    border-bottom: 1px dotted #ccc;
-  }
-
-  .speaker-col {
-    text-align: center;
   }
 }
 

@@ -26,6 +26,9 @@ bronze:
   - name: Ben Franklin Technology Partners
     url: http://cnp.benfranklin.org
     logo: 'bftp.jpg'
+  - name: Widget Financial
+    url: http://widgetfinancial.com
+    logo: 'widget.jpg'
 community:
   - name: Integer 32, LLC
     url: http://integer32.com

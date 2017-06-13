@@ -332,6 +332,13 @@ title: Erie Day of Code 2017 | June 16 @ <%= venue.name %>
             </div>
           </div>
         <% end %>
+
+        <div class="row">
+          <div class="col-md-3 col-md-offset-4">
+          <% data.sponsors.support.each do |name| %>
+            <p><%= name %></p>
+          <% end %>
+        </div>
       </section>
     </div>
   </section>

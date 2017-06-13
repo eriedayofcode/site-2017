@@ -37,7 +37,7 @@
   type: talk
   title: Writing Code That Speaks
   description: |-
-    TBD
+      TBD
   speaker:
     name: Caleb Porzio
     image: speakers/caleb-porzio.jpg
@@ -64,7 +64,7 @@
   type: talk
   title: Functional Programming in the Browser with Elm
   description: |-
-    TBD
+    See how easy it is to get started with functional programming with this introduction to Elm. We'll talk a little bit about the history and philosophy of this relatively new programming language, explore a few of the things you might learn as you use it, look at some of the strengths and weaknesses of this tool, and show you how you can get started on your own adventure with Elm!
   speaker:
     name: Manda Brown
     image: speakers/manda-brown.jpg

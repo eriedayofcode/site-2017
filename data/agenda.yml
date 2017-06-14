@@ -37,7 +37,7 @@
   type: talk
   title: Writing Code That Speaks
   description: |-
-      TBD
+    Code is read many more times than it is written. In this talk Caleb walk through simple, practicle examples of how you can give your code a voice. We're going to explore the power of word choice and how you can develop naming habits that lead to beneficial refactorings.
   speaker:
     name: Caleb Porzio
     image: speakers/caleb-porzio.jpg
@@ -46,12 +46,12 @@
   type: other
   title: Lunch
 
-- time: 1:30pm - 2:l5pm
+- time: 1:30pm - 2:00pm
   type: other
   title: Lightning Talks
   description: Do you have something you want to teach or an awesome project to show off?  Come early and be one of 5 people to sign up to give a lightning talk!
 
-- time: 2:30pm - 3:00pm
+- time: 2:15pm - 3:00pm
   type: talk
   title: "Tales of a Product Owner; or, a Foreigner’s Perspective in a Native Land"
   description: |-
